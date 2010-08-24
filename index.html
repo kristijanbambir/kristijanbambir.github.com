@@ -3,9 +3,116 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Kristijan Bambir</title>
+		
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+		<!-- End CSS -->
+		
+		<!-- jQuery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="src/jquery.scrollTo-1.4.2.js"></script>
+        <script type="text/javascript" src="src/script.js"></script>
+		<script type="text/javascript" src="src/twitter.js"></script>
+		<!-- End jQuery -->
+		
+		<!-- Custom font -->
+		<link rel="stylesheet" href="font/stylesheet.css" type="text/css"> 
+        <style type="text/css" media="screen">
+            .SegoeUI-Light {
+                font-weight: normal;
+                font-style: normal;
+                line-height:normal;
+                font-family: 'SegoeUILight', sans-serif;
+                font-size-adjust: 0.5;
+            }
+        </style> 
+		<!-- End custom font -->
+		
     </head>
     <body>
-    	<h1>Radi!</h1>
+    	
+		<!-- Home screen -->
+        <div id="home" class="page">
+            <div class="container">
+                <a class="navigation next" href="#profile"><img class="nextimg" alt="next" src="img/next.png" /></a>
+				<div id="home_wrapper">
+                    <br /><br /><br />
+                    <img alt="kristijanbambir" src="img/kristijanbambir.png" /><br /><br /><br />
+                    <img alt="weemee" src="img/weemee.png" />
+				</div>
+            </div>
+        </div>
+		<!-- End home screen -->
+		
+		<!-- Profile screen -->
+		<div id="profile" class="page background">
+            <div class="container">
+                <a class="navigation previous" href="#home"><img class="previousimg" alt="previous" src="img/previous.png" /></a>
+				<a class="navigation next" href="#contact"><img class="nextimg" alt="next" src="img/next.png" /></a>
+                <div id="profile_wrapper">
+				    <span id="earth"><img alt="earth" src="img/earth.png" /></span>
+			    </div>
+            </div>
+        </div>
+		<!-- End profile screen -->
+		
+		<!-- Contact screen -->
+        <div id="contact" class="page background">
+            <div class="container">
+                <a class="navigation previous" href="#profile"><img class="previousimg" alt="previous" src="img/previous.png" /></a>
+				<a class="navigation next" href="#credits"><img class="nextimg" alt="next_img" src="img/next.png" /></a>
+                <div id="contact_wrapper" class="SegoeUI-Light">
+                    <div id="social">
+                    	networks
+				    </div>
+					<div id="social_icons">
+						<a href="facebook.com/kbambir" target="_blank"><img class="icon social" alt="Facebook" src="img/facebook.png" /></a>
+						<a href="http://twitter.com/KristijanBambir" target="_blank"><img class="icon social" alt="Twitter" src="img/twitter.png" /></a>
+						<a href="http://codrum.deviantart.com/" target="_blank"><img class="icon social" alt="DeviantART" src="img/deviantart.png" /></a>
+						<a href="http://www.last.fm/user/kbmurdoc" target="_blank"><img class="icon social" alt="Last.fm" src="img/lastfm.png" /></a>
+                    </div>
+					<div id="instant">
+                        contact
+                    </div>
+                    <div id="instant_icons">
+                        <a href="mailto:murdoc9889@gmail.com"><img class="icon contact" alt="murdoc9889@gmail.com" src="img/email.png" /></a>
+                        <a href="skype:onemurdoc?add" target="_blank"><img class="icon contact" alt="onemurdoc" src="img/skype.png" /></a>
+                        <img class="icon contact" alt="murdoc9889@gmail.com" src="img/messenger.png" />
+                    </div>
+					<div id="pgp">
+						<a href="http://pks.aaiedu.hr:11371/pks/lookup?op=get&search=0x27650DB29A8B173E" target="_blank">PGP</a>
+					</div>
+                </div>
+				<div id="twitter-ticker" class="SegoeUI-Light">
+                <!-- Twitter container, hidden by CSS and shown if JS is present -->
+                    <div id="tweet-container"><img id="loading" src="img/loading.gif" width="16" height="11" alt="Loading..." /></div>
+                    <!-- The loading gif animation - hidden once the tweets are loaded -->
+                </div>
+				<div id="social_text"></div>
+				<div id="contact_text"></div>
+            </div>
+        </div>
+		<!-- End contact screen -->
+		
+		<!-- Credits screen -->
+		<div id="credits" class="page">
+            <div class="container">
+                <a class="navigation previous" href="#contact"><img class="previousimg" alt="previous" src="img/previous.png" /></a>
+                <div id="credits_wrapper" class="SegoeUI-Light">
+                	<br /><br /><br /><br /><br />
+                	Kristijan Bambir ©2010 All rights reserved.<br /><br />
+					<div id="credits_to">
+						CREDITS:<br />
+                        <a href="http://nemed.deviantart.com/gallery/#/d2kk17d" target="_blank">Earth Icon</a> by <a href="http://nemed.deviantart.com/" target="_blank">Nemed</a>.<br />
+					    Placemark from <a href="http://www.iconfinder.com/search/?q=iconset:splashyicons" target="_blank">Splashyfish</a> by <a href="http://splashyfish.com/" target="_blank">Dat Nguyen</a>.<br />
+					    Twitter bird from <a href="http://www.iconfinder.com/search/?q=iconset:tweetmyweb" target="_blank">Tweet my web</a> by <a href="http://www.artdesigner.lv/" target="_blank">Artdesigner.lv</a>.<br />
+					    Networks and contact icons from <a href="" target="_blank">Social Icons Pack +</a> by <a href="http://sawb.deviantart.com/" target="_blank">Sylwia Besz</a>.<br /> 
+					    <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" target="_blank">jQuery.ScrollTo</a> plugin by <a href="http://flesler.blogspot.com" target="_blank">Ariel Flesler</a>.
+                    </div>
+				</div>
+            </div>
+        </div>
+		<!-- End credits screen -->
+		
     </body>
 </html>
