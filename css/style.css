@@ -14,6 +14,22 @@ body {
     background-image: url('../img/bg.png');
 }
 
+.BebasNeue {
+    font-weight: normal;
+    font-style: normal;
+    line-height:normal;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size-adjust: 0.7;
+}
+
+.SegoeUI-Light {
+    font-weight: normal;
+    font-style: normal;
+    line-height:normal;
+    font-family: 'SegoeUILight', sans-serif;
+    font-size-adjust: 0.5;
+}
+
 a, a:link, a:hover, a:visited {
     text-decoration: none;
 }
@@ -158,6 +174,10 @@ div#contactlinks a, div#contactlinks a:link, div#contactlinks a:visited, div#con
 
 div.contactlink {
     margin-bottom: 15px;
+}
+
+div#msn {
+    color: #3a3a3a;
 }
 
 div#msntext {
