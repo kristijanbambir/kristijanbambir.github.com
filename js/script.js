@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $.scrollTo($('#home'), 500, {axis:'y'});
     
-    $('a.menubutton, a#contactlink').click(function() {
+    $('a.menubutton, a#contlink').click(function() {
         $.scrollTo($(this).attr('href'), 500, {axis:'y'});
     });
     
