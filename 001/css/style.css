@@ -1,0 +1,237 @@
+/* Kristijan Bambir © 2010 All rights reserved.
+*/
+
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+    display: block;
+}
+
+.BebasNeue {
+    font-weight: normal;
+    font-style: normal;
+    line-height:normal;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size-adjust: 0.7;
+}
+
+.SegoeUI-Light {
+    font-weight: normal;
+    font-style: normal;
+    line-height:normal;
+    font-family: 'SegoeUILight', sans-serif;
+    font-size-adjust: 0.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-image: url('../img/bg.png');
+}
+
+a, a:link, a:hover, a:visited {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+div.floater {
+    position: relative;
+    float: left;
+    height: 50%;
+    margin-bottom: -125px;
+}
+
+div#about {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*padding: 50px 0 200px 0;*/
+    position: absolute;
+    left: 0;
+}
+
+div#home {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*padding: 50px 0 200px 0;*/
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    position: absolute;
+    right: -100%;
+}
+
+div#containerhome {
+    clear: left;
+    height: 250px;
+    position: relative;
+    width: 700px;
+    border: 1px solid gray;
+    margin: auto;
+}
+
+div#contact {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*padding: 50px 0 200px 0;*/
+    position: absolute;
+    right: -200%;
+}
+
+div#title {
+    /*border: 1px solid silver;*/
+    font-size: 100px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    color: #4b4b4b;
+    text-align: center;
+    /*text-shadow: 0 0 5px #7a7a7a;*/
+}
+
+div#subtitle {
+    /*border: 1px solid silver;*/
+    font-size: 40px;
+    padding-left: 250px;
+    margin-top: -25px;
+    color: #4b4b4b;
+    /*text-shadow: 0 0 4px #7a7a7a;*/
+}
+
+div.menuabout {
+    /*border: 1px solid silver;*/
+    text-align: center;
+    margin-top: 0px;
+}
+
+div.menuhome {
+    /*border: 1px solid silver;*/
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.menucontact {
+    /*border: 1px solid silver;*/
+    text-align: center;
+    margin-top: 300px;
+}
+
+span.menuitem {
+    margin: auto 10px auto 10px;
+    font-size: 50px;
+}
+
+a.menubutton, a.menubutton:link, a.menubutton:visited, a.menubutton:hover {
+    color: #4b4b4b;
+    padding: 5px 20px 5px 20px;
+}
+
+a.selected, a.selected:link, a.selected:visited, a.selected:hover {
+    color: #4b4b4b;
+    padding: 5px 20px 5px 20px;
+}
+
+div#languagebuttons {
+    position: relative;
+    left: 185px;
+    top: 80px;
+    /*border: 1px solid silver;*/
+    width: 100px;
+}
+
+div#languagebuttonstext {
+    position: relative;
+    left: 185px;
+    top: 80px;
+    color: #4b4b4b;
+    width: 100px;
+}
+
+span.buttontext {
+    margin: auto 5px auto 5px;
+}
+
+div#weemee {
+    /*border: 1px solid gray;*/
+    position: relative;
+    float: left;
+    left: 150px;
+    top: 150px;
+}
+
+div#text {
+    /*border: 1px solid black;*/
+    margin: 30px 150px auto 350px;
+    color: #4d4d4d;
+}
+
+div#text a, div#text a:link, div#text a:visited, div#text a:hover {
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+div#sociallinks {
+    /*border: 1px solid gray;*/
+    position:relative;
+    float: left;
+    left: 300px;
+    top: 50px;
+    font-size: 20px;
+}
+
+div#sociallinks a, div#sociallinks a:link, div#sociallinks a:visited, div#sociallinks a:hover {
+    color: #3a3a3a;
+}
+
+div#contactlinks {
+    /*border: 1px solid gray;*/
+    position:relative;
+    float: right;
+    right: 300px;
+    top: 50px;
+    font-size: 20px;
+    text-align: right;
+}
+
+div#contactlinks a, div#contactlinks a:link, div#contactlinks a:visited, div#contactlinks a:hover {
+    color: #3a3a3a;
+}
+
+div.contactlink {
+    margin-bottom: 15px;
+}
+
+div#msn {
+    color: #3a3a3a;
+}
+
+div#msntext {
+    font-size: 15px;
+    color: #666666;
+}
+
+footer, footer a, footer a:link, footer a:visited, footer a:hover  {
+    height: 50px;
+    color: #dedede;
+    background-color: #4b4b4b;
+}
+
+span#validation {
+    position: relative;
+    float: left;
+    left: 30px;
+    top: 8px;
+    font-size: 30px;
+}
+
+span#copyright {
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 15px;
+    font-size: 18px;
+}
