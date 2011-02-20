@@ -197,6 +197,10 @@ span.contactDetail a {
     color:#534B4F;
 }
 
+span.contactDetail a:hover {
+    border-bottom:1px solid #534B4F;
+}
+
 span#tel {
     font-family:"Times New Roman", serif;
 }
