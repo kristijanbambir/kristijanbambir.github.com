@@ -28,11 +28,10 @@ div#container {
 }
 
 div#flags {
-    position: relative;
     width:980px;
     margin:0 auto;
-    right:-800px;
-    overflow:hidden;
+    text-align:right;
+    padding-right:20px;
 }
 
 div#flags img.flag {
