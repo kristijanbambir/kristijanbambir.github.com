@@ -30,26 +30,26 @@
     
     getSize();
     
-    if (size == 'big') {
+    /*if (size == 'big') {
         adjustVerticalAlign(125);
     }
     else {
         adjustVerticalAlign(60);
-    }
+    }*/
     
     adjustFontSize();
     
     $(window).resize(function() {
         getSize();
-        adjustVerticalAlign(0);
+        //adjustVerticalAlign(0);
         adjustFontSize();
     });
     
-    $('div#content').hide();
+    //$('div#content').hide();
     
-    $(window).mousemove(function() {
+    /*$(window).mousemove(function() {
        $('div#content').delay(500).fadeIn('slow'); 
-    });
+    });*/
     
     $('a').hover(
         function() {
