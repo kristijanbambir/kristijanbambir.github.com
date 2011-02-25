@@ -1,78 +1,63 @@
-/* Kristijan Bambir © 2010 All rights reserved.
-*/
+ï»¿$(document).ready(function() {
 
-
-$(document).ready(function() {
-
-    $('div#hide').hide();
+    var size;
     
-    $(document).mousemove(function() {
-        $('div#hide').fadeIn("slow");
+    function getSize() {
+        var documentWidth = $(document).width();
+        if (documentWidth > 1450) {
+            size = 'big';
+        }
+        else {
+            size = 'normal';
+        }
+    }
+    
+    function adjustVerticalAlign(fix) {
+        var documentHeight = $(document).height();
+        var bodyHeight = $('body').height();
+        var marginTop = Math.round((documentHeight - bodyHeight) / 2) - 10 - fix;
+        $('body').css('margin-top', marginTop);
+    }
+    
+    function adjustFontSize() {
+        if (size == 'big') {
+            $('div#content').css('font-size', '2.5em');
+        }
+        else {
+            $('div#content').css('font-size', '2em');
+        }
+    }
+    
+    getSize();
+    
+    if (size == 'big') {
+        adjustVerticalAlign(125);
+    }
+    else {
+        adjustVerticalAlign(60);
+    }
+    
+    adjustFontSize();
+    
+    $(window).resize(function() {
+        getSize();
+        adjustVerticalAlign(0);
+        adjustFontSize();
     });
-
-    $.scrollTo($('#home'), 500, {axis:'y'});
     
-    $('a.menubutton, a.contlink').click(function() {
-        $.scrollTo($(this).attr('href'), 500, {axis:'y'});
+    $('div#content').hide();
+    
+    $(window).mousemove(function() {
+       $('div#content').delay(500).fadeIn('slow'); 
     });
     
     $('a').hover(
         function() {
-            $(this).stop().fadeTo("fast", 0.5);
+            $(this).stop().fadeTo(200, 0.5);
         },
         function() {
-            if ($(this).attr('class')=='selected') {
-                $(this).stop().fadeTo("fast", 0.7);
-            }
-            else {
-                $(this).stop().fadeTo("fast", 1);
-            }
+            $(this).stop().fadeTo(200, 1);
         }
     );
     
-    $('a.selected').stop().fadeTo("slow", 0.7);
-    
-    
-    $('span#aboutcroatian').hide();
-    $('span#aboutmacedonian').hide();
-    
-    $('a#buttoncroatian').click(function() {
-        $('span#aboutmacedonian').fadeOut(400);
-        $('span#aboutenglish').fadeOut(400);
-        $('span#aboutcroatian').delay(500).fadeIn("slow");
-        $('img#buttonimagecroatian').attr('src','img/buttondown.png');
-        $('img#buttonimagemacedonian').attr('src','img/buttonup.png');
-        $('img#buttonimageenglish').attr('src','img/buttonup.png');
-    });
-    
-    $('a#buttonmacedonian').click(function() {
-        $('span#aboutcroatian').fadeOut(400);
-        $('span#aboutenglish').fadeOut(400);
-        $('span#aboutmacedonian').delay(500).fadeIn("slow");
-        $('img#buttonimagecroatian').attr('src','img/buttonup.png');
-        $('img#buttonimagemacedonian').attr('src','img/buttondown.png');
-        $('img#buttonimageenglish').attr('src','img/buttonup.png');
-    });
-    
-    $('a#buttonenglish').click(function() {
-        $('span#aboutcroatian').fadeOut(400);
-        $('span#aboutmacedonian').fadeOut(400);
-        $('span#aboutenglish').delay(500).fadeIn("slow");
-        $('img#buttonimagecroatian').attr('src','img/buttonup.png');
-        $('img#buttonimagemacedonian').attr('src','img/buttonup.png');
-        $('img#buttonimageenglish').attr('src','img/buttondown.png');
-    });
-    
-    $('div#languagebuttonstext').stop().fadeTo("fast", 0.2);
-    
-    $('div#msntext').hide();
-    $('div#msn').hover(
-        function() {
-            $('div#msntext').fadeIn(200);
-        },
-        function() {
-            $('div#msntext').fadeOut(200);
-        }
-    );
-
 });
