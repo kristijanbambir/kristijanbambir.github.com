@@ -1,0 +1,22 @@
+﻿body {
+    background-color:#BCD4E6;
+    margin:0;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+div#content	{
+    width:980px;
+    margin:0 auto;
+    font-size:2em;
+    /*font-family:'Josefin Slab', arial, serif;*/
+    /*font-family:'Raleway', arial, serif;*/
+    font-family:'Josefin Sans', arial, serif;
+    color:White;
+    text-align:center;
+    min-height:100%;
+    padding-bottom:60px;
+}
