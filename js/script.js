@@ -1,16 +1,4 @@
 ﻿$(document).ready(function() {
-
-    var size;
-    
-    function getSize() {
-        var documentWidth = $(document).width();
-        if (documentWidth > 1450) {
-            size = 'big';
-        }
-        else {
-            size = 'normal';
-        }
-    }
     
     function adjustVerticalAlign(fix) {
         var documentHeight = $(document).height();
@@ -19,37 +7,11 @@
         $('body').css('margin-top', marginTop);
     }
     
-    function adjustFontSize() {
-        if (size == 'big') {
-            $('div#content').css('font-size', '2.5em');
-        }
-        else {
-            $('div#content').css('font-size', '2em');
-        }
-    }
-    
-    getSize();
-    
-    /*if (size == 'big') {
-        adjustVerticalAlign(125);
-    }
-    else {
-        adjustVerticalAlign(60);
-    }*/
-    
-    adjustFontSize();
+    adjustVerticalAlign(0);
     
     $(window).resize(function() {
-        getSize();
-        //adjustVerticalAlign(0);
-        adjustFontSize();
+        adjustVerticalAlign(0);
     });
-    
-    //$('div#content').hide();
-    
-    /*$(window).mousemove(function() {
-       $('div#content').delay(500).fadeIn('slow'); 
-    });*/
     
     $('a').hover(
         function() {
