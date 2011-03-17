@@ -1,0 +1,17 @@
+﻿body {
+    background-color:#404040;
+    margin:0;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+div#content	{
+    margin:0;
+    font-size:2em;
+    font-family:'Josefin Sans', arial, serif;
+    color:White;
+    text-align:center;
+}
