@@ -1,0 +1,24 @@
+﻿body {
+    background-color:#404040;
+    margin:0;
+}
+
+a {
+    color:White;
+    text-decoration:none;
+}
+
+div#title {
+    font-size:8em;
+    font-family:'Josefin Sans', arial, serif;
+    text-align:center;
+    color:#444444;
+}
+
+div#content	{
+    margin:0;
+    font-size:2em;
+    font-family:'Josefin Sans', arial, serif;
+    color:White;
+    text-align:center;
+}
