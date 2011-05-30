@@ -37,58 +37,23 @@
         <div id="presentation-counter">Loading...</div>
         <div class="slides">
             <div class="slide" id="landing-slide">
-            <style>
-                #landing-slide p {
-                    font-size: 35px;
-                }
-                p#disclaimer-message {
-                    font-size: 20px;
-                }
-            </style>
-            <section class="middle">
-                <p>This presentation is an HTML5 website</p>
-                <p>Press <span id="left-init-key" class="key">&rarr;</span> key to advance.</p>
-                <p id="disclaimer-message">Having issues seeing the presentation? Read the <a href="disclaimer.html">disclaimer</a></p>
-            </section>
-            </div>
-    
-            
-            <div class="slide" id="controls-slide">
-            <style>
-                #controls-slide li, #controls-slide p {
-                    font-size: 35px;
-                }
-            </style>
-            <section>
-                <p>Slides controls, press:</p>
-                <ul>
-                <li><span class="key">&larr;</span> and <span class="key">&rarr;</span> to move around.</li>
-                <li><span class="key">Ctrl/Command</span> and <span class="key">+</span> or <span class="key">-</span> to zoom in and out if slides don’t fit.</li>
-                <li><span class="key">T</span> to change the theme.</li>
-                <li><span class="key">H</span> to toggle syntax highlight.</li>
-                </ul>
-            </section>
-            </div>
-    
-            
-            <div class="slide" id="title-slide">
                 <style>
-                    #title-slide h1, #title-slide h2, #title-slide h3 {
+                    #landing-slide h1, #landing-slide h2, #landing-slide h3 {
                         color: black;
                     }
-                    #title-slide h1 {
+                    #landing-slide h1 {
                         letter-spacing: -2px;
                         font-size: 96px;
                     }
-                    #title-slide h2 {
+                    #landing-slide h2 {
                         margin-top: -5px;
                         font-size: 40px;
                         letter-spacing: -1px;
                     }
-                    #title-slide h3 {
+                    #landing-slide h3 {
                         margin-top:-50px;
                     }
-                    #title-slide p {
+                    #landing-slide p {
                         margin-top:-50px;
                     }
                 </style>
@@ -110,7 +75,8 @@
                     </hgroup>
                     <br/>
                     <p>Kristijan Bambir</p>
-                    <p>Voditelj: doc. dr. sc. Gordan Gledec</p>
+                    <p>Voditelj: doc. dr. sc. Gordan Gledec</p><br/>
+                    <span id="left-init-key" class="key">&rarr;</span>
                 </section>
             </div>
             
@@ -132,12 +98,14 @@
                             <li>Svojstva</li>
                         </ul>
                     </ul>
-                    <pre>
+                    <div data-build>
+                        <pre>
 body {
     background-color: Blue;
     margin: 0 auto;
     width: 240px;
 }</pre>
+                    </div>
                 </section>
                 <div class="footer"></div>
             </div>
@@ -262,6 +230,7 @@ body {
                 </style>
                 <header><h1>Obilježja CSS3 - <span class="mono">border-radius</span></h1></header>
                 <section>
+                    <div>
                     <pre>
 div#borderradius1 {
     border-radius: <input id="inputborderradius1" type="text" value="10px" size="25"></input>;
@@ -274,8 +243,8 @@ div#borderradius3 {
 }
 div#borderradius4 {
     border-radius: <input id="inputborderradius4" type="text" value="30px / 10px" size="25"></input>;
-}
-                    </pre>
+}</pre>
+                    </div>
                     <button class="buttonSet" type="button">Osvježi</button>
                     <br/>
                     <div class="showcase">
@@ -428,11 +397,10 @@ div#boxshadow4 {
             
             <div class="slide" id="multiple-backgrounds">
                 <style>
-                    div#multiplenackgroundselement {
-                        height: 350px;
-                        width: 350px;
-                        background: url("src/img/okvir.png") top center no-repeat,
-                        url("src/img/spectrum.png") top center no-repeat;
+                    div#multiplebackgroundselement {
+                        height: 300px;
+                        width: 300px;
+                        background: url("src/img/okvir.png") top center no-repeat, url("src/img/spectrum.png") top center no-repeat;
                         padding: 10px;
                     }
                 </style>
@@ -440,15 +408,66 @@ div#boxshadow4 {
                 <section>
                     <pre>
 div#multiplenackgroundselement {
-    background: url("src/img/okvir.png") top center no-repeat,
-    url("src/img/spectrum.png") top center no-repeat;
+    background:
+        url("src/img/okvir.png") top center no-repeat,
+        url("src/img/spectrum.png") top center no-repeat;
 }</pre>
-                    <br/><br/>
+                    <button id="background-one" class="buttonSet" type="button">Ukloni prvu pozadinu</button><button id="background-two" class="buttonSet" type="button">Ukloni drugu pozadinu</button><br/><br/>
                     <div class="showcase-small">
-                        <div id="multiplenackgroundselement">
+                        <div id="multiplebackgroundselement">
                             element
                         </div>
                     </div>
+                    <script>
+                        var one = 1;
+                        var two = 1;
+                        
+                        $('button#background-one').click(function() {
+                            if (one == 1) {
+                                $('button#background-one').html("Dodaj prvu pozadinu");
+                                one = 0;
+                                if(two == 1) {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/spectrum.png') top center no-repeat");
+                                }
+                                else {
+                                    $('div#multiplebackgroundselement').css("background", "none");
+                                }
+                            }
+                            else {
+                                $('button#background-one').html("Ukloni prvu pozadinu");
+                                one = 1;
+                                if(two == 1) {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/okvir.png') top center no-repeat, url('src/img/spectrum.png') top center no-repeat");
+                                }
+                                else {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/okvir.png') top center no-repeat");
+                                }
+                            }
+                        });
+                        $('button#background-two').click(function() {
+                            if (two == 1) {
+                                $('button#background-two').html("Dodaj drugu pozadinu");
+                                two = 0;
+                                if(one == 1) {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/okvir.png') top center no-repeat");
+                                }
+                                else {
+                                    $('div#multiplebackgroundselement').css("background", "none");
+                                }
+                            }
+                            else {
+                                $('button#background-two').html("Ukloni drugu pozadinu");
+                                two = 1;
+                                if(one == 1) {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/okvir.png') top center no-repeat, url('src/img/spectrum.png') top center no-repeat");
+                                }
+                                else {
+                                    $('div#multiplebackgroundselement').css("background", "url('src/img/spectrum.png') top center no-repeat");
+                                }
+                            }
+                            //if(one == 1 && two = 1) $('div#multiplebackgroundselement').css("background", "url('src/img/okvir.png') top center no-repeat, url('src/img/spectrum.png') top center no-repeat");
+                        });
+                    </script>
                 </section>
                 <div class="footer"></div>
             </div>
@@ -457,16 +476,16 @@ div#multiplenackgroundselement {
             <div class="slide" id="opacity">
                 <style>
                     div#background {
-                        height: 350px;
-                        width: 350px;
+                        height: 300px;
+                        width: 300px;
                         background: url("src/img/spectrum.png") top center no-repeat;
                     }
                     div#opacityelement {
                         opacity: 0.5;
                         background-color: black;
                         color: white;
-                        height: 300px;
-                        width: 300px;
+                        height: 250px;
+                        width: 250px;
                     }
                 </style>
                 <header><h1>Obilježja CSS3 - <span class="mono">opacity</span></h1></header>
@@ -573,6 +592,12 @@ div#opacityelement {
                         -webkit-column-count: 2; 
                         -webkit-column-rule: 1px solid #bbb;
                         -webkit-column-gap: 2em;
+                        -moz-column-count: 2; 
+                        -moz-column-rule: 1px solid #bbb;
+                        -moz-column-gap: 2em;
+                        column-count: 2; 
+                        column-rule: 1px solid #bbb;
+                        column-gap: 2em;
                     }
                 </style>
                 <header><h1>Ostala obilježja CSS3 - raspored u više stupaca</h1></header>
@@ -596,10 +621,16 @@ div#opacityelement {
                         $('button.buttonSet').click(function() {
                             var val = $('input#inputcolumnscount').val();
                             $('div#multi-column-layout').css("-webkit-column-count", val);
+                            $('div#multi-column-layout').css("-moz-column-count", val);
+                            $('div#multi-column-layout').css("column-count", val);
                             val = $('input#inputcolumnsrule').val();
                             $('div#multi-column-layout').css("-webkit-column-rule", val);
+                            $('div#multi-column-layout').css("-moz-column-rule", val);
+                            $('div#multi-column-layout').css("column-rule", val);
                             val = $('input#inputcolumnsgap').val();
                             $('div#multi-column-layout').css("-webkit-column-gap", val);
+                            $('div#multi-column-layout').css("-moz-column-gap", val);
+                            $('div#multi-column-layout').css("column-gap", val);
                         });
                     </script>
                 </section>
@@ -670,6 +701,14 @@ div#opacityelement {
                         -webkit-transition-duration: 1s;
                         -webkit-transition-timing-function: linear;
                         -webkit-transition-delay: 1s;
+                        -moz-transition-property: opacity;
+                        -moz-transition-duration: 1s;
+                        -moz-transition-timing-function: linear;
+                        -moz-transition-delay: 1s;
+                        transition-property: opacity;
+                        transition-duration: 1s;
+                        transition-timing-function: linear;
+                        transition-delay: 1s;
                     }
                     #delay1:hover {
                         opacity: 0;
@@ -803,6 +842,145 @@ div#opacityelement {
                         <li>Ispitivanje podržanosti CSS svojstva Modernizr JavaScript platformom</li>
                     </ul>
                 </section>
+                <div class="footer"></div>
+            </div>
+            
+            
+            <div class="slide" id="sass-primjeri">
+                <style></style>
+                <header><h1>Sass</h1></header>
+                <section class="left">
+                    <h2>Varijable</h2>
+                    <pre id="variables">
+$blue: #3bbfce;
+$margin: 16px;
+
+.content-navigation {
+  border-color: $blue;
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+}</pre>
+                    <pre id="variables-css">
+/* CSS */
+
+
+.content-navigation {
+  border-color: #3bbfce;
+}
+
+.border {
+  padding: 8px;
+  margin: 8px;
+}</pre>
+                    <h2>Gniježđenje</h2>
+                    <pre id="nesting">
+
+
+table.hl {
+  margin: 2em 0;
+  td.ln {
+    text-align: right;
+  }
+}</pre>
+                    <pre id="nesting-css">
+/* CSS */
+
+table.hl {
+  margin: 2em 0;
+}
+table.hl td.ln {
+  text-align: right;
+}</pre>
+                </section>
+                <section class="right">
+                    <h2>Mixins</h2>
+                    <pre id="mixins">
+@mixin table-base {
+  td, th {padding: 2px}
+}
+@mixin left($dist) {
+  margin-left: $dist;
+}
+#data {
+  @include table-base;
+  @include left(10px);
+}</pre>
+                    <pre id="mixins-css">
+/* CSS */
+
+
+#data {
+  margin-left: 10px;
+}
+
+#data td, #data th {
+  padding: 2px;
+}</pre>
+                    <h2>Nasljeđivanje selektora</h2>
+                    <pre id="selector-inheritance">
+
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}</pre>
+                    <pre id="selector-inheritance-css">
+/* CSS */
+
+.error, .badError {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.badError {
+  border-width: 3px;
+}</pre>
+                </section>
+                <script>
+                    $('pre#variables-css').hide();
+                    $('pre#nesting-css').hide();
+                    $('pre#mixins-css').hide();
+                    $('pre#selector-inheritance-css').hide();
+                    $('pre#variables').click(function() {
+                        $(this).hide();
+                        $('pre#variables-css').show();
+                    });
+                    $('pre#variables-css').click(function() {
+                        $(this).hide();
+                        $('pre#variables').show();
+                    });
+                    $('pre#nesting').click(function() {
+                        $(this).hide();
+                        $('pre#nesting-css').show();
+                    });
+                    $('pre#nesting-css').click(function() {
+                        $(this).hide();
+                        $('pre#nesting').show();
+                    });
+                    $('pre#mixins').click(function() {
+                        $(this).hide();
+                        $('pre#mixins-css').show();
+                    });
+                    $('pre#mixins-css').click(function() {
+                        $(this).hide();
+                        $('pre#mixins').show();
+                    });
+                    $('pre#selector-inheritance').click(function() {
+                        $(this).hide();
+                        $('pre#selector-inheritance-css').show();
+                    });
+                    $('pre#selector-inheritance-css').click(function() {
+                        $(this).hide();
+                        $('pre#selector-inheritance').show();
+                    });
+                </script>
                 <div class="footer"></div>
             </div>
             
