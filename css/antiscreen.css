@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    width: auto;
+}
+
+#title {
+    font-size: 58px;
+    margin: 10px auto 10px auto;
+}
+
+#pic {
+    float: none;
+}
+
+#pic img {
+    width: 90%;
+}
+
+#about, #services {
+    width: auto;
+    float: none;
+}
