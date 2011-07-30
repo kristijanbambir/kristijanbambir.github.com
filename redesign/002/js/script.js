@@ -15,4 +15,9 @@
     });
     */
     
+    var documentWidth = $(document).width();
+    var windowWidth = $(window).width();
+    
+    $('#test').html("Document width: " + documentWidth + "<br/>Window width: " + windowWidth);
+    
 });
