@@ -1,69 +1,118 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Terminal+Dosis+Light);
+﻿@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
 
+html {
+    height: 100%;
+}
 body {
-    font-size: 16px;
-    font-family: 'Droid Serif', serif;
-    background-image: url('../img/background.png');
-    background-repeat: repeat;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+    height: 100%;
+    background-image: url('../img/white_tile.png');
+    background-repeat: repeat;
 }
-
-a {
-    color: #4070D6;
-    text-decoration: none;
+#main {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -480px;
+    /*border-right: 1px White solid;
+    border-left: 1px Black solid;*/
 }
-
-li {
-    margin-bottom: 5px;
-}
-
-#title {
-    font-family: 'Terminal Dosis Light', sans-serif;
-    color: Gray;
-    text-align: center;
-    line-height: 100%;
-    font-size: 110px;
-    margin: 20px auto 20px auto;
-}
-
-#about {
-    margin-bottom: 15px;
-}
-
-#pic {
+#left {
     float: left;
+    height: 100%;
+    width: 60%;
+    background-image: url('../img/white_shadow.png');
+    background-repeat: repeat-y;
+    background-position: right;
 }
-#pic img {
-    width: 380px;
+#left_content {
+    margin-right: 30px;
+    margin-top: 60px;
+    color: #292929;
+    float: right;
+    text-align: right;
 }
-#about, #services {
-    width: 380px;
+.content {
+    margin-left: 15px;
+    font-family: 'Droid Serif', serif;
+}
+#right {
+    background-image: url('../img/black_tile.png');
+    background-repeat: repeat;
+    height: 100%;
+    width: 40%;
     float: right;
 }
-
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px)  {
-	body {
+#right_content {
+    color: #F0F0F0;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 60px;
+}
+#right a, #right a:link, #right a:hover, #right a:visited {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-style: italic;
+}
+#fill {
+    height: 100%;
+    right: 0;
+    left: auto;
+    background-image: url('../img/black_tile.png');
+    background-repeat: repeat;
+    background-color: #292929;
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+font {
+    background-image: url('../img/black_tile.png');
+    background-repeat: repeat;
+    padding: 8px 12px 8px 12px;
+    color: #F0F0F0;
+    line-height: 240%;
+    font-size: 24px;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+    #fill {
+        width: 100%;
+    }
+    #main {
+        width: 100%;
         margin: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: auto;
-	}
-    #title {
-        font-size: 58px;
-        margin: 10px auto 10px auto;
+        left: 0;
     }
-    #pic {
+    #left {
         float: none;
-        text-align: center;
-        margin-bottom: 10px;
+        width: 100%;
+        height: 380px;
+        background-image: url('../img/white_shadow_vertical.png');
+        background-repeat: repeat-x;
+        background-position: bottom;
     }
-    #pic img {
-        width: 95%;
+    #left_content {
+        margin-top: 30px;
     }
-    #about, #services {
-        width: auto;
+    #right {
         float: none;
+        width: 100%;
+        height: auto;
+    }
+    #right_content {
+        margin-top: 10px;
+        padding-bottom: 15px;
+    }
+    font {
+        font-size: 18px;
     }
 }
