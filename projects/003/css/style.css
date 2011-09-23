@@ -25,7 +25,7 @@ body {
 #left {
     float: left;
     height: 100%;
-    width: 60%;
+    width: 30%;
     background-image: url('../img/white_shadow.png');
     background-repeat: repeat-y;
     background-position: right;
@@ -36,6 +36,13 @@ body {
     color: #292929;
     float: right;
     text-align: right;
+    font-size: 20px;
+    line-height: 150%;
+}
+#left a, #left a:link, #left a:hover, #left a:visited {
+    color: #292929;
+    text-decoration: none;
+    font-style: italic;
 }
 .content {
     margin-left: 15px;
@@ -45,7 +52,7 @@ body {
     background-image: url('../img/black_tile.png');
     background-repeat: repeat;
     height: 100%;
-    width: 40%;
+    width: 70%;
     float: right;
 }
 #right_content {
@@ -66,7 +73,7 @@ body {
     background-image: url('../img/black_tile.png');
     background-repeat: repeat;
     background-color: #292929;
-    width: 50%;
+    width: 75%;
     margin: 0;
     position: absolute;
     z-index: 1;
@@ -95,7 +102,7 @@ font {
     #left {
         float: none;
         width: 100%;
-        height: 380px;
+        height: 420px;
         background-image: url('../img/white_shadow_vertical.png');
         background-repeat: repeat-x;
         background-position: bottom;
