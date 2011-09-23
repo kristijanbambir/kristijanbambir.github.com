@@ -9,6 +9,7 @@ body {
     height: 100%;
     background-image: url('../img/white_tile.png');
     background-repeat: repeat;
+	z-index: 0;
 }
 #main {
     width: 960px;
