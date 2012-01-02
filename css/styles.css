@@ -45,6 +45,7 @@
     }
     
     #about img {
+        float: left;
         margin: 15px 15px 15px 0;
     }
 	
@@ -55,9 +56,9 @@
 
 @media handheld, only screen and (max-width: 767px) {
 
-	body {
-		
-	}
+	#about img {
+        margin-right: 40px;
+    }
 
 }
 
