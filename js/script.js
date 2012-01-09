@@ -1,6 +1,7 @@
 ﻿$(function () {
     
     var socialicon = $(".socialicon");
+    var weemee = $("#weemee");
     
     socialicon.fadeTo(0, 0.7);
     
@@ -13,7 +14,8 @@
         }
     );
     
-    socialicon.tipsy({opacity: 0.6, fade: true});
+    socialicon.tipsy({fade: true, opacity: 0.6});
+    weemee.tipsy({gravity: 'w', weemee: true});
     
     /*function adjustVerticalAlign() {
         var documentHeight = $(document).height();
