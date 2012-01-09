@@ -15,7 +15,7 @@
     );
     
     socialicon.tipsy({fade: true, opacity: 0.6});
-    weemee.tipsy({gravity: 'w', weemee: true});
+    weemee.tipsy({gravity: 'w', opacity: 0.6, weemee: true});
     
     /*function adjustVerticalAlign() {
         var documentHeight = $(document).height();
