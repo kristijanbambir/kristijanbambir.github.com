@@ -1,77 +1,104 @@
-﻿<!DOCTYPE html>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Kristijan Bambir</title>
-        <meta name="description" content="Kristijan Bambir is a software engineer from Zagreb, Croatia. He is passionate about design and photography." />
-        <meta name="keywords" content="kristijan, bambir, software, engineer, zagreb, croatia, social, service" />
-        <meta name="author" content="Kristijan Bambir"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <!-- 1140px Grid styles for IE -->
-	    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
-	    <!-- The 1140px Grid - http://cssgrid.net/ -->
-	    <link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/tipsy.css" media="screen" type="text/css" />
-        <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
-        <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
-	    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.tipsy.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="twelvecol">
-                    <img id="weemee" src="img/weemee.png" alt="weemee" title="Hello!" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelvecol">
-                    <a href="http://codrum.deviantart.com/" target="_blank">
-                        <img class="socialicon" src="img/circle-deviantart.png" alt="deviantart" title="DeviantART" />
-                    </a>
-                    <a href="http://www.facebook.com/kbambir" target="_blank">
-                        <img class="socialicon" src="img/circle-facebook.png" alt="facebook" title="Facebook" />
-                    </a>
-                    <a href="http://www.flickr.com/photos/kristijanbambir/" target="_blank">
-                        <img class="socialicon" src="img/circle-flickr.png" alt="flickr" title="Flickr" />
-                    </a>
-                    <a href="https://profiles.google.com/kristijan.bambir" target="_blank">
-                        <img class="socialicon" src="img/circle-google.png" alt="google" title="Google+" />
-                    </a>
-                    <a href="http://www.last.fm/user/kbmurdoc" target="_blank">
-                        <img class="socialicon" src="img/circle-lastfm.png" alt="lastfm" title="Last.fm" />
-                    </a>
-                    <a href="http://www.linkedin.com/pub/kristijan-bambir/25/848/300" target="_blank">
-                        <img class="socialicon" src="img/circle-linkedin.png" alt="linkedin" title="LinkedIn" />
-                    </a>
-                    <a href="skype:kristijan.bambir?add">
-                        <img class="socialicon" src="img/circle-skype.png" alt="skype" title="Skype" />
-                    </a>
-                    <a href="http://blog.kristijanbambir.from.hr/" target="_blank">
-                        <img class="socialicon" src="img/circle-tumblr.png" alt="tumblr" title="Tumblr" />
-                    </a>
-                    <a href="http://twitter.com/KristijanBambir" target="_blank">
-                        <img class="socialicon" src="img/circle-twitter.png" alt="twitter" title="Twitter" />
-                    </a>
-                    <a href="http://www.youtube.com/user/kbambir" target="_blank">
-                        <img class="socialicon" src="img/circle-youtube.png" alt="youtube" title="YouTube" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-20557925-2']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </body>
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Kristijan Bambir</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Kristijan Bambir">
+    
+  <link rel="author" href="humans.txt" />
+  
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <!-- <link rel="stylesheet" href="css/minified.css"> -->
+  
+  <!-- CSS imports non-minified for staging, minify before moving to production-->
+  <link rel="stylesheet" href="css/imports.css">
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+  	<section class="row">
+      <div class="seven columns centered">
+        <p></p>
+        <p>
+            Hi! My name is Kristijan Bambir and I am a software developer from Zagreb, Croatia. 
+            I possess general software design skills. I love working with hot technologies and trying out new ones. 
+            My interests are mobile and web development.
+        </p>
+        <p>
+            I write code and share it on <a id="github" href="https://github.com/kristijanbambir" target="_blank">GitHub</a>,
+            tweet from time to time on <a id="twitter" href="https://twitter.com/#!/KristijanBambir" target="_blank">Twitter</a>,
+            take photos on <a id="instagram" href="http://statigr.am/kristijanbambir" target="_blank">Instagram</a>,
+            share what I'm listening to on <a id="lastfm" href="http://www.last.fm/user/kbmurdoc" target="_blank">Last.fm</a>,
+            and post my social updates on <a id="facebook" href="https://www.facebook.com/kbambir" target="_blank">Facebook</a>.
+            Connect with me on <a id="linkedin" href="http://www.linkedin.com/in/kristijanbambir" target="_blank">LinkedIn</a>
+            and endorse me on <a id="zerply" href="http://zerply.com/KristijanBambir/public" target="_blank">Zerply</a>.
+        </p>
+        <p>
+            I enjoy meeting new people. Contact me by <a id="mail" href="mailto:kristijan.bambir@gmail.com">mail</a> (kristijan.bambir@gmail.com) 
+            or <a id="skype" href="skype:kristijan.bambir?add">Skype</a> (kristijan.bambir).
+        </p>
+      </div>
+  	</section>
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="js/libs/gumby.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+    
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20557925-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- end scripts-->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. We suggest that you not support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
 </html>

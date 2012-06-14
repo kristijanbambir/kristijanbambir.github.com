@@ -1,0 +1,11 @@
+/* TEAM */                  
+Developer: Kristijan Bambir
+Site: www.kristijanbambir.from.hr
+Twitter: @KristijanBambir
+Location: Zagreb, Croatia
+
+/* SITE */
+Last update: 2012/06/14
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, Gumby 960 Grid Responsive CSS Framework
+Software: Microsoft WebMatrix, Notepad++
