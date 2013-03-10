@@ -9137,7 +9137,7 @@ hr.soften {
   line-height: 100%;
   margin-right: 10px;
 }
-#social a:last-child i {
+#social a:last-child {
   margin-right: 0;
 }
 #social a:hover {
