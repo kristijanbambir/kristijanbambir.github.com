@@ -1351,8 +1351,7 @@ hr.soften{height:1px;background-image:-webkit-linear-gradient(left, rgba(0, 0, 0
 #weemee{width:100px;margin:40px 0;}
 #tagline{font-size:32px;margin-bottom:30px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;}
 #about{margin:0 20px;}
-#social a{font-size:42px;font-weight:normal;line-height:100%;margin-right:10px;}#social a:last-child{margin-right:0;}
-#social a:hover{text-decoration:none;}
+#social a{font-size:42px;font-weight:normal;line-height:100%;margin:0 5px;}#social a:hover{text-decoration:none;}
 #social a#email{color:#000000;}
 #social a#instagram{color:#517fa4;}
 #social a#lastfm{color:#db1302;}

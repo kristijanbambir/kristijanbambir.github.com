@@ -9135,10 +9135,7 @@ hr.soften {
   font-size: 42px;
   font-weight: normal;
   line-height: 100%;
-  margin-right: 10px;
-}
-#social a:last-child {
-  margin-right: 0;
+  margin: 0 5px;
 }
 #social a:hover {
   text-decoration: none;
