@@ -5,7 +5,13 @@
 
 @FontAwesomePath:   "../scripts/vendor/font-awesome/font";
 @baseLineHeight:    21px;
-@shy:               #40AEDD;
+
+@email:             #000000;
+@instagram:         #517fa4;
+@lastfm:            #db1302;
+@linkedin:          #007bb6;
+@skype:             #00aff0;
+@twitter:           #00a0d1;
 
 body {
     background: url(../images/background.png) repeat;
@@ -63,10 +69,6 @@ hr.soften {
 }
 
 #social {
-    a:hover {
-        text-decoration: none;
-    }
-
     a {
         #font .shorthand(42px, normal, 100%);
         margin-right: 10px;
@@ -74,6 +76,17 @@ hr.soften {
         &:last-child i {
             margin-right: 0;
         }
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &#email     { color: @email;     }
+        &#instagram { color: @instagram; }
+        &#lastfm    { color: @lastfm;    }
+        &#linkedin  { color: @linkedin;  }
+        &#skype     { color: @skype;     }
+        &#twitter   { color: @twitter;   }
     }
 }
 
