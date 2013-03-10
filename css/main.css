@@ -9119,6 +9119,9 @@ hr.soften {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
+.visible-phone-narrow {
+  display: none;
+}
 #weemee {
   width: 100px;
   margin: 40px 0;
@@ -9174,10 +9177,16 @@ hr.soften {
     -moz-box-shadow: none;
     box-shadow: none;
   }
+  .visible-phone-narrow {
+    display: initial;
+  }
   #tagline {
     font-size: 20px;
   }
   #about {
     margin: 0 10px;
+  }
+  #social a {
+    line-height: 63px;
   }
 }
