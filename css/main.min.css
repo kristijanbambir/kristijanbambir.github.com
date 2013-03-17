@@ -1351,7 +1351,7 @@ hr.soften{height:1px;background-image:-webkit-linear-gradient(left, rgba(0, 0, 0
 .visible-phone-narrow{display:none;}
 #weemee{width:100px;margin:40px 0;}
 #tagline{font-size:32px;margin-bottom:30px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;}
-#about{margin:0 20px;}
+#about-container{margin:0 20px;}#about-container #about{margin:0 auto;max-width:450px;}
 #social a{font-size:42px;font-weight:normal;line-height:100%;margin:0 5px;}#social a:hover{text-decoration:none;}
 #social a#email{color:#000000;}
 #social a#instagram{color:#517fa4;}
@@ -1360,4 +1360,4 @@ hr.soften{height:1px;background-image:-webkit-linear-gradient(left, rgba(0, 0, 0
 #social a#skype{color:#00aff0;}
 #social a#twitter{color:#00a0d1;}
 .source-link{text-transform:uppercase;font-size:10px;font-weight:normal;line-height:15px;}
-@media (max-width:480px){body{background:none;} [class*="span"].main:before,[class*="span"].main:after{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;} .visible-phone-narrow{display:initial;} #tagline{font-size:20px;} #about{margin:0 10px;} #social a{line-height:63px;}}
+@media (max-width:767px){body{background:none;} [class*="span"].main:before,[class*="span"].main:after{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;} .visible-phone-narrow{display:initial;} #tagline{font-size:20px;} #about-container{margin:0 10px;} #social a{line-height:63px;}}

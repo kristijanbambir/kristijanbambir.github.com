@@ -9131,8 +9131,12 @@ hr.soften {
   margin-bottom: 30px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
-#about {
+#about-container {
   margin: 0 20px;
+}
+#about-container #about {
+  margin: 0 auto;
+  max-width: 450px;
 }
 #social a {
   font-size: 42px;
@@ -9167,7 +9171,7 @@ hr.soften {
   font-weight: normal;
   line-height: 15px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   body {
     background: none;
   }
@@ -9183,7 +9187,7 @@ hr.soften {
   #tagline {
     font-size: 20px;
   }
-  #about {
+  #about-container {
     margin: 0 10px;
   }
   #social a {

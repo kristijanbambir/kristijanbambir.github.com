@@ -3,7 +3,7 @@ $(function() {
     $('a[rel="tooltip"]').tooltip();
 
     var centerContainer = function () {
-        var main = $('.container-fluid.main');
+        var main = $('.container.main');
 
         if ($(document).width() > 480) {
             var mainHeight = main.height();

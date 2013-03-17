@@ -68,8 +68,13 @@ hr.soften {
     #font #family .monospace();
 }
 
-#about {
+#about-container {
     margin: 0 20px;
+
+    #about {
+        margin: 0 auto;
+        max-width: 450px;
+    }
 }
 
 #social {
@@ -95,7 +100,7 @@ hr.soften {
     #font .shorthand(10px, normal, 15px);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     body {
         background: none;
     }
@@ -115,7 +120,7 @@ hr.soften {
         font-size: 20px;
     }
 
-    #about {
+    #about-container {
         margin: 0 10px;
     }
 
