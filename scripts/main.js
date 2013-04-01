@@ -2,27 +2,6 @@ $(function() {
 
     $('a[rel="tooltip"]').tooltip();
 
-    var centerContainer = function () {
-        var main = $('.container.main');
-
-        if ($(document).width() > 480) {
-            var mainHeight = main.height();
-            var documentHeight = $(document).height();
-            var margin = '20px';
-
-            if (documentHeight > mainHeight) {
-                margin = (documentHeight - mainHeight) / 2;
-            }
-
-            main.css('margin-top', margin);
-        } else {
-            main.css('margin-top', 0);
-        }
-    }
-
-    centerContainer();
-    $(window).resize(centerContainer);
-
     setInterval(function() {
         var cursor = $('#cursor');
         var delay = 500;

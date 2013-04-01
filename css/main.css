@@ -9072,8 +9072,47 @@ ul.icons li [class*=" icon-"] {
 .rondo-px:before {
   content: "\66\69\76\65\68\75\6e\64\72\65\64";
 }
-body {
+html {
   background: url(../images/background.png) repeat;
+  height: 100%;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1)));
+  background-image: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  background-image: -moz-radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  background-image: -o-radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.floater {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.floater .main {
+  display: -webkit-box;
+  display: -ms-box;
+  display: -ms-flexbox;
+  display: box;
+  display: -moz-box;
+  height: 100%;
+  vertical-align: top;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  -ms-flex-align: center;
 }
 hr.soften {
   height: 1px;

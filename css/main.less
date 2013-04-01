@@ -13,8 +13,61 @@
 @skype:             #00aff0;
 @twitter:           #00a0d1;
 
-body {
+.display-box() {
+    display: -webkit-box;
+    display: -ms-box;
+    display: -ms-flexbox;
+    display: box;
+    display: -moz-box;
+}
+
+.box-align(@position) {
+    -webkit-box-align: @position;
+    -moz-box-align: @position;
+    -ms-box-align: @position;
+    box-align: @position;
+}
+
+.box-orient(@position) {
+    -webkit-box-orient: @position;
+    -moz-box-orient: @position;
+    -ms-box-orient: @position;
+    box-orient: @position;
+}
+
+.box-pack(@position) {
+    -webkit-box-pack: @position;
+    -moz-box-pack: @position;
+    -ms-box-pack: @position;
+    box-pack: @position;
+    -ms-flex-align: @position
+}
+
+html {
     background: url(../images/background.png) repeat;
+    height: 100%;
+}
+
+body {
+    #gradient .radial(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1));
+    height: 100%;
+}
+
+.floater {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .main {
+        .display-box();
+        height: 100%;
+        vertical-align: top;
+        .box-align(center);
+        .box-orient(vertical);
+        .box-pack(center);
+    }
 }
 
 hr.soften {
