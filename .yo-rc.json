@@ -1,7 +1,0 @@
-{
-  "generator-react-webpack": {
-    "appName": "kristijanbambir",
-    "style": "sass",
-    "postcss": true
-  }
-}
