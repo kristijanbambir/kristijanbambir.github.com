@@ -22,8 +22,45 @@ body {
     height: 100%;
 }
 
+::-moz-selection { background: $selection-color; }
+::selection { background: $selection-color; }
+
+a {
+  color: $link-color;
+  font-size: 1.2em;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.site-title {
+  color: $title-color;
+  font-size: 3em;
+}
+
+.site-tagline {
+  color: $tagline-color;
+  font-size: 2em;
+  margin: 0.6em auto;
+}
+
 .vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .body { font-size: 24px; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .body { font-size: 32px; }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .body { font-size: 40px; }
 }
