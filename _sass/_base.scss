@@ -52,15 +52,15 @@ a {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-  .body { font-size: 24px; }
+  body { font-size: 18px; }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-  .body { font-size: 32px; }
+  body { font-size: 20px; }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-  .body { font-size: 40px; }
+  body { font-size: 22px; }
 }
