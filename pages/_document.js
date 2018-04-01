@@ -3,6 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server'; // eslint-disable-line import/no-extraneous-dependencies
 
 export default class MyDocument extends Document {
+
   static getInitialProps({ renderPage }) {
     const {
       html,
@@ -45,4 +46,5 @@ export default class MyDocument extends Document {
       </html>
     );
   }
+
 }
