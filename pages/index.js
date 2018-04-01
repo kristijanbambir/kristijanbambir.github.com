@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SPACING_UNIT } from '../common/constants';
+
 function Index() {
   return (
     <div className='container'>
@@ -26,6 +28,7 @@ function Index() {
           .container {
             max-width: 500px;
             margin: 0 auto;
+            padding: 0 ${SPACING_UNIT * 2}px;
           }
         `}
       </style>
