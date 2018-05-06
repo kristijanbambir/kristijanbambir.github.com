@@ -33,18 +33,30 @@ export default class MyDocument extends Document {
             name='viewport'
           />
           <link
-            href='https://fonts.googleapis.com/css?family=Noto+Sans'
+            href='https://fonts.googleapis.com/css?family=Noto+Serif'
             rel='stylesheet'
           />
-          <style>
-            {`
-              body {
-                margin: 0;
-                padding: 0;
-                font-family: Noto Sans, sans-serif;
-              }
-            `}
-          </style>
+          <style>{`
+            html {
+              height: 100%;
+            }
+
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: Noto Serif, serif;
+              height: 100%;
+            }
+
+            #__next {
+              height: 100%;
+            }
+
+            a:link,
+            a:visited {
+              color: #000000;
+            }
+          `}</style>
         </Head>
         <body>
           <Main />
