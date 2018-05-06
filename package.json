@@ -15,14 +15,15 @@
   "author": "Kristijan Bambir",
   "homepage": "https://github.com/kristijanbambir/kristijanbambir.github.com#readme",
   "dependencies": {
-    "next": "5.1.0",
-    "react": "16.3.0",
-    "react-dom": "16.3.0"
+    "next": "6.0.0",
+    "prop-types": "^15.6.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2"
   },
   "devDependencies": {
     "@infinumjs/eslint-config-react": "1.0.0",
     "eslint": "4.19.1",
-    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-import": "2.11.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.7.0"
   }
