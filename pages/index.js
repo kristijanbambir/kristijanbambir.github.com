@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from '../components/Link';
 
-import { SPACING_UNIT } from '../common/constants';
-
 const LINKS = [{
   href: 'https://github.com/kristijanbambir',
   title: 'GitHub',
@@ -23,6 +21,10 @@ const LINKS = [{
 function Index() {
   return (
     <div className='container'>
+      <img
+        alt='avatar'
+        src='/static/avatar.jpg'
+      />
       <h1>
         {'Hi '}
         <span
@@ -53,6 +55,11 @@ function Index() {
       <style jsx>{`
         .container {
           padding: 1em 2em;
+        }
+
+        img {
+          width: 200px;
+          border-radius: 50%;
         }
 
         @media (min-width: 544px) {
