@@ -25,9 +25,6 @@ export default class MyDocument extends Document {
     return (
       <html lang='en'>
         <Head>
-          <title>
-            Kristijan Bambir
-          </title>
           <meta
             content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
             name='viewport'
