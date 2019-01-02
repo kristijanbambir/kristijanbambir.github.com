@@ -16,14 +16,14 @@
   "homepage": "https://github.com/kristijanbambir/kristijanbambir.github.com#readme",
   "dependencies": {
     "next": "7.0.2",
-    "react": "16.6.0",
-    "react-dom": "16.6.0"
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
   },
   "devDependencies": {
-    "@infinumjs/eslint-config-react": "1.0.0",
-    "eslint": "5.8.0",
+    "@infinumjs/eslint-config-react": "1.1.0",
+    "eslint": "5.11.1",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.11.1"
+    "eslint-plugin-react": "7.12.1"
   }
 }
