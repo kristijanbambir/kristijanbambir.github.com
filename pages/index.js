@@ -23,7 +23,7 @@ function Index() {
     <div className='container'>
       <img
         alt='avatar'
-        src='/static/avatar.jpg'
+        src='avatar.jpg'
       />
       <h1>
         {'Hi '}
