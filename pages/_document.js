@@ -53,6 +53,23 @@ export default class MyDocument extends Document {
             a:visited {
               color: #000000;
             }
+
+            @media (prefers-color-scheme: dark) {
+              body {
+                background-color: #444;
+                color: #E4E4E4;
+              }
+
+              a,
+              a:link,
+              a:visited {
+                color: #E4E4E4;
+              }
+
+              img {
+                filter: gr  ayscale(30%);
+              }
+            }
           `}</style>
         </Head>
         <body>
