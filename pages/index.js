@@ -38,7 +38,7 @@ function Index() {
       <h2>
         {'JavaScript Team Lead '}
         <a
-          href='http://infinum.co/'
+          href='http://infinum.com/'
         >
           @infinumco
         </a>
