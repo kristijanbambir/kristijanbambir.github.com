@@ -40,7 +40,7 @@ function Index() {
         <a
           href='http://infinum.com/'
         >
-          @infinumco
+          @infinumcom
         </a>
       </h2>
       <div>
