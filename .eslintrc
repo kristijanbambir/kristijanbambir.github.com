@@ -1,5 +1,5 @@
 {
-  "extends": "@infinumjs/eslint-config-react",
+  "extends": ["@infinumjs/eslint-config-react", "prettier"],
   "rules": {
     "react/jsx-closing-tag-location": 0,
     "react/jsx-one-expression-per-line": 0
