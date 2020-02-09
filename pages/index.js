@@ -37,7 +37,7 @@ function Index() {
       </h1>
       <h2>
         {'JavaScript Team Lead '}
-        <a href="http://infinum.com/">@infinumcom</a>
+        <a href="http://infinum.com/">@infinum</a>
       </h2>
       <div>
         {LINKS.map(link => (
