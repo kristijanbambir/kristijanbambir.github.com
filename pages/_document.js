@@ -61,7 +61,7 @@ export default class MyDocument extends Document {
               }
 
               img {
-                filter: gr  ayscale(30%);
+                filter: grayscale(30%);
               }
             }
           `}</style>
