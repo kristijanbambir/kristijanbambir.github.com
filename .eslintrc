@@ -1,7 +1,10 @@
 {
-  "extends": ["@infinumjs/eslint-config-react", "prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "parser": "babel-eslint",
   "rules": {
-    "react/jsx-closing-tag-location": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/react-in-jsx-scope": "off"
+  },
+  "globals": {
+    "React": "writable"
   }
 }

@@ -15,20 +15,18 @@
   "author": "Kristijan Bambir",
   "homepage": "https://github.com/kristijanbambir/kristijanbambir.github.com#readme",
   "dependencies": {
-    "next": "9.1.1",
-    "react": "16.10.2",
-    "react-dom": "16.10.2"
+    "next": "~9.2.1",
+    "react": "~16.12.0",
+    "react-dom": "~16.12.0"
   },
   "devDependencies": {
-    "@infinumjs/eslint-config-react": "1.3.0",
-    "eslint": "6.5.1",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.16.0",
-    "husky": "4.2.1",
-    "lint-staged": "^10.0.7",
-    "prettier": "1.19.1"
+    "babel-eslint": "~10.0.3",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.0",
+    "eslint-plugin-react": "~7.18.3",
+    "husky": "~4.2.1",
+    "lint-staged": "~10.0.7",
+    "prettier": "~1.19.1"
   },
   "husky": {
     "hooks": {

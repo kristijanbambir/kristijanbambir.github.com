@@ -1,16 +1,10 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import flush from 'styled-jsx/server'; // eslint-disable-line import/no-extraneous-dependencies
+import flush from 'styled-jsx/server';
 
 export default class MyDocument extends Document {
-
   static getInitialProps({ renderPage }) {
-    const {
-      html,
-      head,
-      errorHtml,
-      chunks,
-    } = renderPage();
+    const { html, head, errorHtml, chunks } = renderPage();
     const styles = flush();
     return {
       html,
@@ -23,15 +17,15 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang='en'>
+      <html lang="en">
         <Head>
           <meta
-            content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
-            name='viewport'
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+            name="viewport"
           />
           <link
-            href='https://fonts.googleapis.com/css?family=Noto+Serif'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css?family=Noto+Serif"
+            rel="stylesheet"
           />
           <style>{`
             html {
@@ -79,5 +73,4 @@ export default class MyDocument extends Document {
       </html>
     );
   }
-
 }
