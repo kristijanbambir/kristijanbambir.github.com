@@ -27,7 +27,7 @@ const LINKS = [
 function Index() {
   return (
     <div className="container">
-      <img alt="avatar" src="avatar.jpg" />
+      <img alt="avatar" src="x-ray.png" />
       <h1>
         {'Hi '}
         <span aria-label="wave" role="img">
