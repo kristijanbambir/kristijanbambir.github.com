@@ -44,44 +44,6 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
-          <style>{`
-            html {
-              height: 100%;
-            }
-
-            body {
-              margin: 0;
-              padding: 0;
-              font-family: Noto Serif, serif;
-              height: 100%;
-            }
-
-            #__next {
-              height: 100%;
-            }
-
-            a:link,
-            a:visited {
-              color: #000000;
-            }
-
-            @media (prefers-color-scheme: dark) {
-              body {
-                background-color: #444;
-                color: #E4E4E4;
-              }
-
-              a,
-              a:link,
-              a:visited {
-                color: #E4E4E4;
-              }
-
-              img {
-                filter: grayscale(30%);
-              }
-            }
-          `}</style>
         </Head>
         <body>
           <Main />
