@@ -1,10 +1,6 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
-  "parser": "babel-eslint",
+  "extends": ["@infinumjs/eslint-config-react", "prettier"],
   "rules": {
-    "react/react-in-jsx-scope": "off"
-  },
-  "globals": {
-    "React": "writable"
+    "react/prop-types": [0]
   }
 }
