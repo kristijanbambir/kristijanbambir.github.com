@@ -36,8 +36,8 @@ function Index() {
         {" I'm Kristijan."}
       </h1>
       <h2>
-        {'JavaScript Team Lead '}
-        <a href="http://infinum.com/">@infinum</a>
+        {'Senior Frontend Developer at '}
+        <a href="https://aboutyou.com">ABOUT YOU</a>
       </h2>
       <div>
         {LINKS.map(link => (
