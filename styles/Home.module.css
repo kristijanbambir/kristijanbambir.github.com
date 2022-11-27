@@ -1,0 +1,42 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 4rem 0;
+  max-width: 500px;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.profile {
+  border-radius: 50%;
+  align-self: center;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+}
+
+.links li {
+  margin-top: -1rem;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    align-self: flex-start;
+  }
+}

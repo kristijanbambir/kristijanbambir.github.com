@@ -1,6 +1,0 @@
-{
-  "extends": ["@infinumjs/eslint-config-react", "prettier"],
-  "rules": {
-    "react/prop-types": [0]
-  }
-}

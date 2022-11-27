@@ -1,40 +1,22 @@
 {
-  "name": "kristijanbambir.github.com",
-  "version": "1.0.0",
-  "description": "Kristijan Bambir personal website",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kristijanbambir/kristijanbambir.github.com.git"
-  },
-  "author": "Kristijan Bambir",
-  "homepage": "https://github.com/kristijanbambir/kristijanbambir.github.com#readme",
   "dependencies": {
-    "next": "~9.3.2",
-    "react": "~16.12.0",
-    "react-dom": "~16.12.0"
-  },
-  "devDependencies": {
-    "@infinumjs/eslint-config-react": "^2.0.0",
-    "babel-eslint": "~10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "~6.10.0",
-    "husky": "~4.2.1",
-    "lint-staged": "~10.0.7",
-    "prettier": "~1.19.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "next": "13.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.3"
   }
 }
