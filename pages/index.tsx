@@ -24,8 +24,9 @@ export default function Home() {
         <p className={styles.description}>
           Hi 👋 I&apos;m Kristijan.
           <br />
-          I&apos;m a Senior Frontend Developer at ABOUT YOU. I spend my free
-          time being a dad and husband.
+          I&apos;m a Senior Frontend Developer at{' '}
+          <a href="https://aboutyou.tech/">ABOUT YOU</a>. I spend my free time
+          being a dad and husband.
         </p>
 
         <ul className={styles.links}>
