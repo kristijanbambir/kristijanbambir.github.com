@@ -32,3 +32,9 @@ p {
     background: black;
   }
 }
+
+@media (hover: none) {
+  a {
+    text-decoration: underline;
+  }
+}
