@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import profilePic from '../public/profile.jpg';
 
 export default function Home() {
   return (
@@ -15,10 +16,8 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.profile}
-          src="/profile.jpg"
+          src={profilePic}
           alt="Kristijan Bambir profile image"
-          width={180}
-          height={180}
         />
 
         <p className={styles.description}>
