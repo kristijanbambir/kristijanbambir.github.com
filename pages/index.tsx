@@ -24,8 +24,8 @@ export default function Home() {
           Hi 👋 I&apos;m Kristijan.
           <br />
           I&apos;m a Senior Frontend Developer at{' '}
-          <a href="https://aboutyou.tech/">ABOUT YOU</a>. I spend my free time
-          being a dad and husband.
+          <a href="https://aboutyou.tech/">ABOUT YOU</a>.
+          <br />I spend my free time being a dad and husband.
         </p>
 
         <ul className={styles.links}>
