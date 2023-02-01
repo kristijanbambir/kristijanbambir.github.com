@@ -8,18 +8,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
-  position: relative;
-}
-
-a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: black;
+  text-decoration: underline;
 }
 
 p {
@@ -38,9 +27,5 @@ p {
   body {
     color: white;
     background: black;
-  }
-
-  a::after {
-    background-color: white;
   }
 }
