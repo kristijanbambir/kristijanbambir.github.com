@@ -23,7 +23,7 @@ export default function Home() {
         <p className={styles.description}>
           Hi 👋 I&apos;m Kristijan.
           <br />
-          I&apos;m a Senior Frontend Developer at{' '}
+          I&apos;m a Lead Developer at{' '}
           <a href="https://aboutyou.tech/">ABOUT YOU</a>.
           <br />I spend my free time being a dad and husband.
         </p>
