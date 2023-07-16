@@ -36,9 +36,6 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/kristijanbambir">LinkedIn</a>
           </li>
           <li>
-            <a href="https://twitter.com/KristijanBambir">Twitter</a>
-          </li>
-          <li>
             <a href="https://www.instagram.com/kristijanbambir/">Instagram</a>
           </li>
           <li>
