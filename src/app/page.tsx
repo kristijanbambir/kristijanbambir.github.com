@@ -1,31 +1,24 @@
-import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import profilePic from '../public/profile.jpg';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Kristijan Bambir</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Kristijan Bambir personal pages" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <Image
           className={styles.profile}
-          src={profilePic}
+          src="/profile.jpg"
           alt="Kristijan Bambir profile image"
+          width={180}
+          height={180}
         />
 
         <p className={styles.description}>
           Hi 👋 I&apos;m Kristijan.
           <br />
           I&apos;m a Lead Developer at{' '}
-          <a href="https://aboutyou.tech/">ABOUT YOU</a>.
-          <br />I spend my free time being a dad and husband.
+          <a href="https://aboutyou.tech/">ABOUT YOU</a>. I spend my free time
+          being a dad and husband.
         </p>
 
         <ul className={styles.links}>

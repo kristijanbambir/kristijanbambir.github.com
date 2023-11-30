@@ -13,12 +13,10 @@
   justify-content: center;
   gap: 2rem;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .profile {
-  width: 180px;
-  height: 180px;
   border-radius: 50%;
   align-self: flex-start;
 }
