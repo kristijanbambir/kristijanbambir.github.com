@@ -1,24 +1,28 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
-  margin: 0 auto;
-  padding: 4rem 0;
-  max-width: 500px;
-  min-height: 100vh;
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
-  line-height: 1.5;
-  font-size: 1.75rem;
+  gap: 1rem;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.profile {
-  border-radius: 50%;
-  align-self: flex-start;
+.title {
+  font-size: 3em;
+}
+
+.title .gradient {
+  background: linear-gradient(260deg, #e26e43 -4%, #f8ce0e 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 2em;
 }
 
 .links {
@@ -32,24 +36,19 @@
 }
 
 .links li {
-  margin-top: -1rem;
+  font-size: 1.2em;
 }
 
-@media (min-width: 600px) {
-  .profile {
-    align-self: center;
-  }
-}
-
-@media (min-width: 1920px) {
-  .profile {
-    width: 250px;
-    height: 250px;
-  }
-
+@media (min-width: 640px) {
   .main {
-    max-width: 700px;
-    gap: 3rem;
-    font-size: 2rem;
+    padding: 0 40px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    padding: 0 60px;
+    font-size: 32px;
   }
 }

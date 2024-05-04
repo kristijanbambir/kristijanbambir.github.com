@@ -11,14 +11,6 @@ a {
   text-decoration: underline;
 }
 
-p {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

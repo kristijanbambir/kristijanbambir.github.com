@@ -3,39 +3,32 @@ import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <Image
-          className={styles.profile}
-          src="/profile.jpg"
-          alt="Kristijan Bambir profile image"
-          width={180}
-          height={180}
-        />
+    <main className={styles.main}>
+      <h1 className={styles.title}>
+        Hi 👋 I&apos;m Kristijan,
+        <br />
+        <span className={styles.gradient}>Lead Developer</span> at{' '}
+        <a href="https://aboutyou.tech/">ABOUT YOU</a>.
+      </h1>
 
-        <p className={styles.description}>
-          Hi 👋 I&apos;m Kristijan.
-          <br />
-          I&apos;m a Lead Developer at{' '}
-          <a href="https://aboutyou.tech/">ABOUT YOU</a>.
-          <br />I spend my free time being a dad and husband.
-        </p>
+      <h2 className={styles.subtitle}>
+        In my free time I&apos;m a dad and husband.
+      </h2>
 
-        <ul className={styles.links}>
-          <li>
-            <a href="https://github.com/kristijanbambir">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/kristijanbambir">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/kristijanbambir/">Instagram</a>
-          </li>
-          <li>
-            <a href="mailto:kristijan.bambir@gmail.com">Email</a>
-          </li>
-        </ul>
-      </main>
-    </div>
+      <ul className={styles.links}>
+        <li>
+          <a href="https://github.com/kristijanbambir">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kristijanbambir">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/kristijanbambir/">Instagram</a>
+        </li>
+        <li>
+          <a href="mailto:kristijan.bambir@gmail.com">Email</a>
+        </li>
+      </ul>
+    </main>
   );
 }
