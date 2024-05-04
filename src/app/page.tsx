@@ -7,8 +7,7 @@ export default function Home() {
       <h1 className={styles.title}>
         Hi 👋 I&apos;m Kristijan,
         <br />
-        <span className={styles.gradient}>Lead Developer</span> at{' '}
-        <a href="https://aboutyou.tech/">ABOUT YOU</a>.
+        Lead Developer at <a href="https://aboutyou.tech/">ABOUT YOU</a>.
       </h1>
 
       <h2 className={styles.subtitle}>
