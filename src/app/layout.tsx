@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montagu_Slab as Font } from 'next/font/google';
+import { Red_Hat_Mono as Font } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 
