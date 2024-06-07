@@ -9,9 +9,13 @@ export default function Home() {
         Lead Developer at <a href="https://aboutyou.tech/">ABOUT YOU</a>.
       </h1>
 
+      <p className={styles.break}>&nbsp;</p>
+
       <h2 className={styles.subtitle}>
         In my free time I&apos;m a dad and husband.
       </h2>
+
+      <p className={styles.break}>&nbsp;</p>
 
       <ul className={styles.links}>
         <li>

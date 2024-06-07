@@ -13,6 +13,10 @@
   line-height: 1.2;
 }
 
+.break {
+  font-size: var(--text-size);
+}
+
 .title {
   font-size: var(--text-size);
 }
