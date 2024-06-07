@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Playfair_Display as Font } from 'next/font/google';
+import { Montagu_Slab as Font } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 
-const font = Font({ subsets: ['latin'] });
+const font = Font({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: 'Kristijan Bambir',
