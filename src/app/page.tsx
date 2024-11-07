@@ -7,7 +7,7 @@ export default function Home() {
 
       <span className={styles.line}>
         I&apos;m a Lead Developer at{' '}
-        <a href="https://aboutyou.tech/">ABOUT YOU</a>.
+        <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
       </span>
 
       <span className={styles.line}>
