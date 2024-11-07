@@ -3,31 +3,28 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>
-        Hi 👋 I&apos;m Kristijan,
-        <br />
-        Lead Developer at <a href="https://aboutyou.tech/">ABOUT YOU</a>.
-      </h1>
+      <h1 className={styles.title}>Hello, I&apos;m Kristijan.</h1>
 
-      <p className={styles.break}>&nbsp;</p>
+      <span className={styles.line}>
+        I&apos;m a Lead Developer at{' '}
+        <a href="https://aboutyou.tech/">ABOUT YOU</a>.
+      </span>
 
-      <h2 className={styles.subtitle}>
+      <span className={styles.line}>
         In my free time I&apos;m a dad and husband.
-      </h2>
-
-      <p className={styles.break}>&nbsp;</p>
+      </span>
 
       <ul className={styles.links}>
-        <li>
+        <li className={styles.link}>
           <a href="https://github.com/kristijanbambir">GitHub</a>
         </li>
-        <li>
+        <li className={styles.link}>
           <a href="https://www.linkedin.com/in/kristijanbambir">LinkedIn</a>
         </li>
-        <li>
+        <li className={styles.link}>
           <a href="https://www.instagram.com/kristijanbambir/">Instagram</a>
         </li>
-        <li>
+        <li className={styles.link}>
           <a href="mailto:kristijan.bambir@gmail.com">Email</a>
         </li>
       </ul>

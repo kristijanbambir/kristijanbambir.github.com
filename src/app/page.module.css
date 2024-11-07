@@ -1,6 +1,4 @@
 .main {
-  --text-size: 1.5em;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,20 +7,29 @@
   margin: 0 auto;
   padding: 0 20px;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.2;
 }
 
-.break {
-  font-size: var(--text-size);
-}
-
 .title {
-  font-size: var(--text-size);
+  font-family: var(--title-font);
+  font-size: 4em;
+  font-weight: 400;
 }
 
-.subtitle {
-  font-size: var(--text-size);
+.title + .line {
+  margin-top: 1em;
+}
+
+.line {
+  font-size: 1.5em;
+}
+
+.line + .line {
+  margin-top: 0.5em;
+}
+
+.line + .links {
+  margin-top: 1em;
 }
 
 .links {
@@ -30,8 +37,12 @@
   list-style: none;
 }
 
-.links li {
-  font-size: var(--text-size);
+.link {
+  font-size: 1.5em;
+}
+
+.link + .link {
+  margin-top: 0.2em;
 }
 
 @media (min-width: 640px) {

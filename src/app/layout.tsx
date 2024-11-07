@@ -1,9 +1,20 @@
 import type { Metadata } from 'next';
-import { Red_Hat_Mono as Font } from 'next/font/google';
+import { Bodoni_Moda as TitleFont } from 'next/font/google';
+import { Inter as BodyFont } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 
-const font = Font({ subsets: ['latin'], weight: '400' });
+const titleFont = TitleFont({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--title-font',
+});
+
+const bodyFont = BodyFont({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--body-font',
+});
 
 export const metadata: Metadata = {
   title: 'Kristijan Bambir',
@@ -17,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={`${titleFont.variable} ${bodyFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
