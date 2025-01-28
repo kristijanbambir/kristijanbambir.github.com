@@ -18,8 +18,8 @@ a {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #d6d6d6;
-    --background-color: #2e2e2e;
+    --text-color: #ffffff;
+    --background-color: #000000;
     --link-color: #e5b567;
   }
 

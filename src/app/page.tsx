@@ -6,12 +6,8 @@ export default function Home() {
       <h1 className={styles.title}>Hello, I&apos;m Kristijan.</h1>
 
       <span className={styles.line}>
-        I&apos;m a Lead Developer at{' '}
+        I&apos;m a Lead Frontend Developer at{' '}
         <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
-      </span>
-
-      <span className={styles.line}>
-        In my free time I&apos;m a dad and husband.
       </span>
 
       <ul className={styles.links}>
