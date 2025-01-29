@@ -14,7 +14,7 @@
   font-family: var(--title-font);
   font-size: 4em;
   font-weight: 400;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.08em;
 }
 
 .title + .line {
