@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { Bodoni_Moda as TitleFont } from 'next/font/google';
-import { Inter as BodyFont } from 'next/font/google';
+import { Darker_Grotesque as TitleFont } from 'next/font/google';
+import { DM_Sans as BodyFont } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 

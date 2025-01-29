@@ -3,10 +3,10 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Hello, I&apos;m Kristijan.</h1>
+      <h1 className={styles.title}>Kristijan Bambir</h1>
 
       <span className={styles.line}>
-        I&apos;m a Lead Frontend Developer at{' '}
+        Lead Frontend Developer at{' '}
         <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
       </span>
 
