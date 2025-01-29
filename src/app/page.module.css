@@ -8,13 +8,14 @@
   padding: 0 20px;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: -0.05em;
 }
 
 .title {
   font-family: var(--title-font);
   font-size: 4em;
   font-weight: 400;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.04em;
 }
 
 .title + .line {
@@ -23,7 +24,6 @@
 
 .line {
   font-size: 1.5em;
-  letter-spacing: -0.05em;
 }
 
 .line + .line {
@@ -41,7 +41,6 @@
 
 .link {
   font-size: 1.5em;
-  letter-spacing: -0.05em;
 }
 
 .link + .link {
