@@ -3,16 +3,16 @@
   flex-direction: column;
   gap: 0;
   min-height: 100svh;
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 0 20px;
-  font-size: max(24px, 4.5vw);
+  font-size: clamp(24px, 4.5vw, 50px);
   line-height: 1;
   letter-spacing: -0.05em;
 }
 
 .title {
   font-family: var(--title-font);
-  font-size: 18vw;
+  font-size: 20vw;
   font-weight: 400;
   letter-spacing: -0.04em;
 }
@@ -37,6 +37,10 @@
 @media (min-width: 640px) {
   .main {
     padding: 0 40px;
+  }
+
+  .title {
+    font-size: 12vw;
   }
 }
 

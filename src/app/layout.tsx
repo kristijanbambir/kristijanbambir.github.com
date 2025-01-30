@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { Darker_Grotesque as TitleFont } from 'next/font/google';
-import { DM_Sans as BodyFont } from 'next/font/google';
+import { IBM_Plex_Serif as TitleFont } from 'next/font/google';
+import { IBM_Plex_Sans as BodyFont } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 
