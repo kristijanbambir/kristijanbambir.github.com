@@ -3,10 +3,9 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Kristijan Bambir</h1>
-
       <span className={styles.line}>
-        Lead Frontend Developer at{' '}
+        Hello, I'm Kristijan. I'm a web developer based in Croatia with thirteen
+        years of experience. I'm currently a Lead Frontend Developer at{' '}
         <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
       </span>
 
