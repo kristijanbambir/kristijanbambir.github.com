@@ -5,10 +5,11 @@
 }
 
 body {
-  color: var(--text-color);
+  padding: 0 20px;
   background-color: var(--background-color);
   font-family: var(--body-font);
   font-weight: 400;
+  color: var(--text-color);
 }
 
 a {
@@ -25,5 +26,17 @@ a {
 
   html {
     color-scheme: dark;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 0 60px;
   }
 }
