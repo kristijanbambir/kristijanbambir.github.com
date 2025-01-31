@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Serif as TitleFont } from 'next/font/google';
-import { IBM_Plex_Sans as BodyFont } from 'next/font/google';
+import { Work_Sans as BodyFont } from 'next/font/google';
 import './reset.css';
 import './globals.css';
 
@@ -12,7 +12,7 @@ const titleFont = TitleFont({
 
 const bodyFont = BodyFont({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '500'],
   variable: '--body-font',
 });
 

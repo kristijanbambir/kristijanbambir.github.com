@@ -6,6 +6,7 @@
   max-width: 800px;
   margin: 0 auto;
   font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
@@ -35,7 +36,7 @@
 }
 
 @media (min-width: 640px) {
-  .title {
-    font-size: 12vw;
+  .main {
+    font-weight: 400;
   }
 }
