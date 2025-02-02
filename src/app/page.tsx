@@ -5,8 +5,8 @@ export default function Home() {
     <main className={styles.main}>
       <span className={styles.line}>
         Hello, I&apos;m Kristijan, a web developer based in Croatia with
-        thirteen years of experience. I&apos;m currently a Lead Frontend
-        Developer at <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
+        thirteen years of experience. I&apos;m a Lead Frontend Developer at{' '}
+        <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
       </span>
 
       <ul className={styles.links}>
