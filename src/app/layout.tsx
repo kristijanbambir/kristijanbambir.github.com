@@ -1,8 +1,11 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
-import { IBM_Plex_Serif as TitleFont } from 'next/font/google';
-import { DM_Serif_Text as BodyFont } from 'next/font/google';
-import './reset.css';
+import {
+  DM_Serif_Text as BodyFont,
+  IBM_Plex_Serif as TitleFont,
+} from 'next/font/google';
 import './globals.css';
+import './reset.css';
 
 const titleFont = TitleFont({
   subsets: ['latin'],
@@ -31,6 +34,7 @@ export default function RootLayout({
       <body className={`${titleFont.variable} ${bodyFont.variable}`}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-0411R4GLWR" />
     </html>
   );
 }
