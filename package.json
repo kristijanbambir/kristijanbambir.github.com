@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^15.1.7",
-    "next": "^15.1.7",
+    "@next/third-parties": "^15.2.2",
+    "next": "^15.2.2",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -19,7 +19,7 @@
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "eslint": "^9",
-    "eslint-config-next": "15.1.7",
+    "eslint-config-next": "15.2.2",
     "typescript": "^5"
   },
   "overrides": {
