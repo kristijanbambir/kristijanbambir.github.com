@@ -9,21 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^15.2.2",
-    "next": "^15.2.2",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "@next/third-parties": "15.3.1",
+    "next": "15.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
     "eslint": "^9",
-    "eslint-config-next": "15.2.2",
+    "eslint-config-next": "15.3.1",
     "typescript": "^5"
   },
   "overrides": {
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4"
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2"
   }
 }
