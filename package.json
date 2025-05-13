@@ -9,22 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "15.3.1",
+    "@next/third-parties": "15.3.2",
     "babel-plugin-react-compiler": "^19.1.0-rc.1",
-    "next": "15.3.1",
+    "next": "15.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "19.1.2",
-    "@types/react-dom": "19.1.2",
+    "@types/react": "19.1.4",
+    "@types/react-dom": "19.1.5",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1",
+    "eslint-config-next": "15.3.2",
     "typescript": "^5"
   },
   "overrides": {
-    "@types/react": "19.1.2",
-    "@types/react-dom": "19.1.2"
+    "@types/react": "19.1.4",
+    "@types/react-dom": "19.1.5"
   }
 }
