@@ -1,3 +1,4 @@
+import { Anchor } from '../components/Anchor';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -5,22 +6,27 @@ export default function Home() {
     <main className={styles.main}>
       <span className={styles.line}>
         Hello, I&apos;m Kristijan, a web developer based in Croatia with almost
-        fifteen years of experience. I&apos;m a Staff Frontend Engineer at{' '}
-        <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>.
+        fifteen years of experience. I&apos;m currently a Team Lead of the{' '}
+        <Anchor href="https://corporate.aboutyou.de/en/">ABOUT YOU</Anchor> web
+        frontend team.
       </span>
 
       <ul className={styles.links}>
         <li className={styles.link}>
-          <a href="https://github.com/kristijanbambir">GitHub</a>
+          <Anchor href="https://github.com/kristijanbambir">GitHub</Anchor>
         </li>
         <li className={styles.link}>
-          <a href="https://www.linkedin.com/in/kristijanbambir">LinkedIn</a>
+          <Anchor href="https://www.linkedin.com/in/kristijanbambir">
+            LinkedIn
+          </Anchor>
         </li>
         <li className={styles.link}>
-          <a href="https://www.instagram.com/kristijanbambir/">Instagram</a>
+          <Anchor href="https://www.instagram.com/kristijanbambir/">
+            Instagram
+          </Anchor>
         </li>
         <li className={styles.link}>
-          <a href="mailto:kristijan.bambir@gmail.com">Email</a>
+          <Anchor href="mailto:kristijan.bambir@gmail.com">Email</Anchor>
         </li>
       </ul>
     </main>
