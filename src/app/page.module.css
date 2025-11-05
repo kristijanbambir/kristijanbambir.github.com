@@ -27,12 +27,11 @@
 }
 
 .links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
-}
-
-.link + .link {
-  margin-top: 0.2em;
 }
 
 @media (min-width: 640px) {
