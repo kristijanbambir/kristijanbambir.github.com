@@ -5,10 +5,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <span className={styles.line}>
-        Hello, I&apos;m Kristijan, a web developer based in Croatia with almost
-        fifteen years of experience. I&apos;m currently a Team Lead of the{' '}
-        <Anchor href="https://corporate.aboutyou.de/en/">ABOUT YOU</Anchor> web
-        frontend team.
+        Hello, I&apos;m Kristijan, a web developer based in Croatia with fifteen
+        years of experience. I&apos;m a Frontend Team Lead at{' '}
+        <Anchor href="https://corporate.aboutyou.de/en/">ABOUT YOU</Anchor>. I
+        was previously a JavaScript Team Lead at{' '}
+        <Anchor href="https://infinum.com">Infinum</Anchor>.
       </span>
 
       <ul className={styles.links}>
