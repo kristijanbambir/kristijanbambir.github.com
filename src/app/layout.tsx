@@ -1,7 +1,7 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import {
-  DM_Serif_Text as BodyFont,
+  Instrument_Serif as BodyFont,
   IBM_Plex_Serif as TitleFont,
 } from 'next/font/google';
 import './globals.css';
