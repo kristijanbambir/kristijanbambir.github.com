@@ -9,23 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "16.0.1",
+    "@next/third-parties": "16.1.1",
     "babel-plugin-react-compiler": "^19.1.0-rc.1",
     "ios-haptics": "^0.1.4",
-    "next": "16.0.1",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "eslint": "^9",
-    "eslint-config-next": "16.0.1",
+    "eslint-config-next": "16.1.1",
     "typescript": "^5"
   },
   "overrides": {
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2"
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
   }
 }
