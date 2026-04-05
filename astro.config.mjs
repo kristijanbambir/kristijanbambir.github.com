@@ -8,7 +8,7 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: "Inter",
+      name: "IBM Plex Mono",
       cssVariable: "--font-body",
     },
   ],
