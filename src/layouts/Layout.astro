@@ -1,0 +1,133 @@
+---
+import { Font } from "astro:assets";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kristijan Bambir</title>
+    <Font cssVariable="--font-body" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  /*
+  Source: https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+  /*
+  1. Use a more-intuitive box-sizing model.
+*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  /*
+  2. Remove default margin
+*/
+  * {
+    margin: 0;
+  }
+  /*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+  5. Improve media defaults
+*/
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+  6. Remove built-in form typography styles
+*/
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  /*
+  7. Avoid text overflows
+*/
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+  8. Create a root stacking context
+*/
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+</style>
+
+<style is:global>
+  :root {
+    --text-color: #1f2328;
+    --background-color: #eeeeee;
+    --link-color: #9a6700;
+  }
+
+  body {
+    padding: 0 20px;
+    background-color: var(--background-color);
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text-color: #ffffff;
+      --background-color: #000000;
+      --link-color: #e5b567;
+    }
+
+    html {
+      color-scheme: dark;
+    }
+  }
+
+  @media (min-width: 640px) {
+    body {
+      padding: 0 40px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    body {
+      padding: 0 60px;
+    }
+  }
+</style>

@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <span>
+      Hello, I&apos;m Kristijan, a web developer based in Croatia with fifteen
+      years of experience.
+    </span>
+
+    <span>
+      I&apos;m a Frontend Engineer at <a href="https://vumedi.com">Vumedi</a>.
+      Previously I was a Frontend Team Lead at
+      <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>, and JavaScript
+      Team Lead at <a href="https://infinum.com">Infinum</a>.
+    </span>
+
+    <ul class="links">
+      <li>
+        <a href="https://github.com/kristijanbambir">GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/kristijanbambir"> LinkedIn </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/kristijanbambir/"> Instagram </a>
+      </li>
+      <li>
+        <a href="mailto:kristijan.bambir@gmail.com">Email</a>
+      </li>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    min-height: 100svh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 0;
+    font-size: clamp(21px, 4.5vw, 32px);
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 640px) {
+    .main {
+      font-weight: 400;
+    }
+  }
+</style>
