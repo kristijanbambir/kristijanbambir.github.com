@@ -1,9 +1,10 @@
 {
-  "name": "astro",
+  "name": "kristijanbambir.from.hr",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "private": true,
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24"
   },
   "scripts": {
     "dev": "astro dev",
