@@ -12,6 +12,34 @@ import { Font } from "astro:assets";
     <meta name="generator" content={Astro.generator} />
     <title>Kristijan Bambir</title>
     <Font cssVariable="--font-body" />
+
+    {
+      import.meta.env.PROD && (
+        <>
+          <!-- Google tag (gtag.js) -->
+          <script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-0411R4GLWR"></script>
+
+          <script is:inline type="text/partytown">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            // This should ALWAYS be set before the gtag("config", "G-XXXXXXXXXX"); line
+            gtag("consent", "default", {
+                ad_storage: "denied",
+                ad_user_data: "denied",
+                ad_personalization: "denied",
+                analytics_storage: "denied",
+            });
+
+            gtag("config", "G-0411R4GLWR");
+          </script>
+        </>
+      )
+    }
+
   </head>
   <body>
     <slot />
