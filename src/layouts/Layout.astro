@@ -121,11 +121,18 @@ import { Font } from "astro:assets";
     --text-color: #2b241c;
     --background-color: #f7f1e8;
     --link-color: #b45309;
+    --muted-color: #6b5f52;
+    --border-color: #d8cdbf;
+    --surface-color: #fffaf3;
+    --focus-ring-color: rgba(180, 83, 9, 0.3);
   }
 
   body {
     padding: 0 20px;
     background-color: var(--background-color);
+    background-image:
+      radial-gradient(circle at 90% 10%, rgba(180, 83, 9, 0.1), transparent 35%),
+      radial-gradient(circle at 10% 90%, rgba(43, 36, 28, 0.08), transparent 30%);
     font-family: var(--font-body);
     font-weight: 400;
     color: var(--text-color);
@@ -134,6 +141,19 @@ import { Font } from "astro:assets";
   a {
     color: var(--link-color);
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 180ms ease;
+  }
+
+  a:hover {
+    color: color-mix(in oklab, var(--link-color), var(--text-color) 30%);
+  }
+
+  a:focus-visible {
+    outline: 3px solid var(--focus-ring-color);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -142,6 +162,10 @@ import { Font } from "astro:assets";
       --text-color: #e8f5e9;
       --background-color: #0b1f1a;
       --link-color: #34d399;
+      --muted-color: #a8c4b7;
+      --border-color: #1f3a32;
+      --surface-color: #102822;
+      --focus-ring-color: rgba(52, 211, 153, 0.35);
     }
 
     html {

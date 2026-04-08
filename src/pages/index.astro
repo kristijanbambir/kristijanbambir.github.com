@@ -3,62 +3,188 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main>
-    <span>
-      Hello, I&apos;m Kristijan, a web developer based in Croatia with fifteen
-      years of experience.
-    </span>
+  <main class="page">
+    <h2 class="section-label">About</h2>
+    <h1>Kristijan Bambir</h1>
 
-    <span>
-      I&apos;m a Frontend Engineer at <a href="https://vumedi.com">Vumedi</a>.
-      Previously I was a Frontend Team Lead at
-      <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a>, and JavaScript
-      Team Lead at <a href="https://infinum.com">Infinum</a>.
-    </span>
+    <p class="intro">
+      Web developer from Croatia with 15+ years of experience.
+    </p>
 
-    <ul class="links">
-      <li>
-        <a href="https://github.com/kristijanbambir">GitHub</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/kristijanbambir"> LinkedIn </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/kristijanbambir/"> Instagram </a>
-      </li>
-      <li>
-        <a href="mailto:kristijan.bambir@gmail.com">Email</a>
-      </li>
-    </ul>
+    <p class="experience">
+      Currently Frontend Engineer at <a href="https://vumedi.com">Vumedi</a>.
+      Previously Frontend Team Lead at
+      <a href="https://corporate.aboutyou.de/en/">ABOUT YOU</a> and JavaScript Team
+      Lead at <a href="https://infinum.com">Infinum</a>.
+    </p>
+
+    <h2 id="links-heading" class="section-label">Links</h2>
+
+    <section aria-labelledby="links-heading" class="contact">
+      <ul class="links">
+        <li>
+          <a class="chip" href="https://github.com/kristijanbambir">GitHub</a>
+        </li>
+        <li>
+          <a class="chip" href="https://www.linkedin.com/in/kristijanbambir"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a class="chip" href="https://www.instagram.com/kristijanbambir/"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="chip" href="mailto:kristijan.bambir@gmail.com">Email</a>
+        </li>
+      </ul>
+    </section>
   </main>
 </Layout>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+  .page {
     min-height: 100svh;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 16px 0;
-    font-size: clamp(18px, 4.5vw, 32px);
-    font-weight: 500;
-    line-height: 2;
+    padding: clamp(64px, 12vh, 140px) 0 48px;
+    display: grid;
+    gap: clamp(16px, 2.5vw, 28px);
+  }
+
+  .page > * {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: reveal 560ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .page > :nth-child(1) {
+    animation-delay: 40ms;
+  }
+
+  .page > :nth-child(2) {
+    animation-delay: 120ms;
+  }
+
+  .page > :nth-child(3) {
+    animation-delay: 200ms;
+  }
+
+  .page > :nth-child(4) {
+    animation-delay: 280ms;
+  }
+
+  .page > :nth-child(5) {
+    animation-delay: 360ms;
+  }
+
+  .page > :nth-child(6) {
+    animation-delay: 440ms;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 9vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    max-width: 12ch;
+  }
+
+  .intro,
+  .experience {
+    font-size: clamp(1.05rem, 2.8vw, 1.8rem);
+    line-height: 1.45;
+    max-width: 36ch;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .section-label::after {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+
+  .contact {
+    margin-top: 4px;
+    display: grid;
+    gap: 14px;
   }
 
   .links {
     display: flex;
-    gap: 16px;
     flex-wrap: wrap;
+    gap: 12px;
     padding: 0;
     list-style: none;
   }
 
+  .chip {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      color 180ms ease;
+  }
+
+  .chip:hover {
+    transform: translateY(-1px);
+    border-color: var(--link-color);
+    color: var(--link-color);
+  }
+
   @media (min-width: 640px) {
-    .main {
-      font-weight: 400;
+    .page {
+      gap: 24px;
+    }
+
+    .intro,
+    .experience {
+      max-width: 42ch;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .page > * {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+
+    .chip,
+    .chip:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 </style>
