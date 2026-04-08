@@ -117,9 +117,10 @@ import { Font } from "astro:assets";
 
 <style is:global>
   :root {
-    --text-color: #1f2328;
-    --background-color: #eeeeee;
-    --link-color: #9a6700;
+    /* Warm Paper (light mode) */
+    --text-color: #2b241c;
+    --background-color: #f7f1e8;
+    --link-color: #b45309;
   }
 
   body {
@@ -137,9 +138,10 @@ import { Font } from "astro:assets";
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --text-color: #ffffff;
-      --background-color: #000000;
-      --link-color: #e5b567;
+      /* Forest Night (dark mode) */
+      --text-color: #e8f5e9;
+      --background-color: #0b1f1a;
+      --link-color: #34d399;
     }
 
     html {
