@@ -15,6 +15,6 @@
   "dependencies": {
     "@astrojs/netlify": "^7.0.10",
     "@astrojs/partytown": "^2.1.7",
-    "astro": "^6.3.7"
+    "astro": "^6.4.8"
   }
 }
