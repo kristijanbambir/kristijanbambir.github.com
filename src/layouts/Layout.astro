@@ -7,6 +7,10 @@ import { Font } from "astro:assets";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kristijan Bambir is a web developer from Croatia, currently Frontend Lead at Vumedi."
+    />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
@@ -117,14 +121,13 @@ import { Font } from "astro:assets";
 
 <style is:global>
   :root {
-    /* Warm Paper (light mode) */
-    --text-color: #2b241c;
-    --background-color: #f7f1e8;
-    --link-color: #b45309;
-    --muted-color: #6b5f52;
-    --border-color: #d8cdbf;
-    --surface-color: #fffaf3;
-    --focus-ring-color: rgba(180, 83, 9, 0.3);
+    --text-color: #20201f;
+    --background-color: #fff;
+    --link-color: #20201f;
+    --link-underline-color: #bcbcb8;
+    --muted-color: #777774;
+    --border-color: #e7e7e4;
+    --focus-ring-color: rgba(32, 32, 31, 0.28);
   }
 
   body {
@@ -137,14 +140,14 @@ import { Font } from "astro:assets";
 
   a {
     color: var(--link-color);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration-color: var(--link-underline-color);
+    text-underline-offset: 4px;
     text-decoration-thickness: 1px;
-    transition: color 180ms ease;
+    transition: text-decoration-color 160ms ease;
   }
 
   a:hover {
-    color: color-mix(in oklab, var(--link-color), var(--text-color) 30%);
+    text-decoration-color: currentColor;
   }
 
   a:focus-visible {
@@ -155,18 +158,14 @@ import { Font } from "astro:assets";
 
   @media (prefers-color-scheme: dark) {
     :root {
-      /* Forest Night (dark mode) */
-      --text-color: #e8f5e9;
-      --background-color: #0b1f1a;
-      --link-color: #34d399;
-      --muted-color: #a8c4b7;
-      --border-color: #1f3a32;
-      --surface-color: #102822;
-      --focus-ring-color: rgba(52, 211, 153, 0.35);
-    }
-
-    html {
       color-scheme: dark;
+      --text-color: #ededeb;
+      --background-color: #171716;
+      --link-color: #ededeb;
+      --link-underline-color: #777774;
+      --muted-color: #a3a39f;
+      --border-color: #363634;
+      --focus-ring-color: rgba(237, 237, 235, 0.4);
     }
   }
 
