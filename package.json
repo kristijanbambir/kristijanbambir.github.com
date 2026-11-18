@@ -13,8 +13,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^8.2.10",
+    "@astrojs/netlify": "^8.2.14",
     "@astrojs/partytown": "^2.1.9",
-    "astro": "^7.4.4"
+    "astro": "^7.4.13"
   }
 }
